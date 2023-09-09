@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#display-controls {
+    margin-top: 20px;
+}
+
+/* Style for the LCD input container */
+.lcd-input {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+/* Style for the text input */
+.lcd-text-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+/* Style for the LCD display container */
+.lcd-display-container {
+    margin-top: 10px; /* Add margin to separate the text input and preview */
+}
+
+/* Style for the LCD display preview */
+.lcd-display {
+    width: 500px; /* Increase the width for a larger display */
+    height: 130px; /* Increase the height for a larger display */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: blue; /* Set the background color to blue */
+}
+
+/* Style for individual LCD pixels (squares) */
+.lcd-pixel {
+    width: 18px; /* Adjust the pixel size */
+    height: 20px; /* Adjust the pixel size */
+    background-color: white; /* Set the pixel color to white */
+    margin: 3px; /* Add margin to separate pixels */
+    display: inline-block;
+}
