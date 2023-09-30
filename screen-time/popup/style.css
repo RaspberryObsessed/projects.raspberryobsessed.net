@@ -1,0 +1,56 @@
+/* Center the main menu container horizontally */
+.popup-menu {
+    display: block;
+    position: absolute;
+    bottom: 30px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; /* Place the overlay above other content */
+    margin: 0 auto; /* Center horizontally */
+}
+
+/* Style the gray box around popup-buttons-container and popup-cancel-container */
+.popup-buttons-container, .popup-cancel-container {
+    background-color: #3c3a3a;
+    border-radius: 10px; /* Adjust the border radius for roundness */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 400px; /* Set a fixed width for the menu containers */
+    font-size: 20px; /* Adjust the font size */
+    text-align: center; /* Center the text horizontally */
+    margin-bottom: 15px; /* Add a 15px gap between boxes */
+}
+
+/* Add a background color to separate the buttons */
+.menu-divider {
+    background-color: #5f5f61; /* Add your desired background color */
+    height: 3px; /* Adjust the height to create the visual separation */
+}
+
+/* Style the menu items */
+.popup-buttons-container ul, .popup-cancel-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.popup-buttons-container a, .popup-cancel-container a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Style the buttons within popup-buttons-container and popup-cancel-container */
+.menuButton {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 20px;
+    background-color: #3c3a3a;
+    color: #fff;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px; /* Adjust the border radius for roundness */
+}
+
+.menuButton:hover {
+    background-color: #454343; /* Change color on hover */
+}

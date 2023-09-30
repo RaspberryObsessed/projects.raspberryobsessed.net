@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popup/style.css">
+    <title>Screen Time Limit</title>
+</head>
+<body>
+    <div class="container">
+        <img src="images/hour_glass.png" alt="Hourglass Image" class="hourglass">
+        <p class="title">Time Limit</p>
+        <br>
+        <p class="app-name">You've reached your limit on <a id="appName">App Name</a></p>
+        <div class="buttons-container">
+            <button id="okButton">OK</button>
+            <p class="ask-for" id="ask-for">Ask for more time</p>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="popup-menu" id="popupMenu">
+        <div class="popup-buttons-container">
+            <ul>
+                <li class="menuButton">One More Minute</li>
+                <div class="menu-divider"></div>
+                <li class="menuButton">Send Request</li>
+                <div class="menu-divider"></div>
+                <li class="menuButton">Enter Screen Time Passcode</li>
+            </ul>
+        </div>
+        
+        <!-- Create a separate container for the "Cancel" button -->
+        <div class="popup-cancel-container">
+            <ul>
+                <li class="menuButton" id="cancelButton">Cancel</li>
+            </ul>
+        </div>
+    </div>
+    
+
+
+    <script src="popup/script.js"></script>
+</body>
+</html>
