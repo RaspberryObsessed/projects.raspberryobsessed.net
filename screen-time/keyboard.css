@@ -11,37 +11,53 @@
     text-align: center;
 }
 
-h1 {
-    font-size: 24px;
-    margin-top: 10px;
+.enter-title {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    position: absolute;
+    top: 10px;
+    left: 50%; /* Place it at the horizontal center */
+    transform: translateX(-50%); /* Adjust to center horizontally */
+}
+
+.enter-title-sub {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .cancel-button {
-    background-color: #1385f7;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
+    color: #1385f7;
+    font-size: 20px;
     padding: 5px 10px;
     position: absolute;
     top: 10px;
     right: 10px;
-    cursor: pointer;
 }
 
 .passcode-input {
-    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: flex-start; /* Align to the top */
+    height: 100%;
+    margin-top: 60%; /* Adjust the margin to position slightly higher */
 }
 
 .passcode-input p {
     font-size: 18px;
+    margin-top: 10px; /* Adjust the margin to position slightly higher */
 }
 
 .passcode-digits {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px; /* Adjust the margin to position slightly higher */
 }
+
 
 .digit {
     width: 20px; /* Adjust the width */
@@ -49,7 +65,7 @@ h1 {
     background-color: transparent; /* No fill color */
     border: 2px solid #ffffff; /* Border color */
     border-radius: 50%; /* Make it a circle */
-    margin-right: 10px; /* Adjust the spacing between circles */
+    margin: 15px; /* Adjust the spacing between circles */
 }
 
 /* Style for filled passcode digit circles */
@@ -66,7 +82,7 @@ h1 {
     left: 0; /* Align it to the left edge */
     z-index: 3; /* Place it above other content */
     display: inline-block; /* Make the keyboard container inline-block */
-    padding-bottom: 60px;
+    padding-bottom: 15%;
 }
 
 .keyboard-row {
