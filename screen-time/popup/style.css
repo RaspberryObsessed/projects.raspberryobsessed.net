@@ -1,8 +1,8 @@
 /* Center the main menu container horizontally */
 .popup-menu {
-    display: block;
+    display: none;
     position: absolute;
-    bottom: 30px; /* Adjust as needed */
+    bottom: 20px; /* Adjust as needed */
     left: 50%;
     transform: translateX(-50%);
     z-index: 2; /* Place the overlay above other content */
@@ -11,7 +11,7 @@
 
 /* Style the gray box around popup-buttons-container and popup-cancel-container */
 .popup-buttons-container, .popup-cancel-container {
-    background-color: #3c3a3a;
+    background-color: #2c2c2e;
     border-radius: 10px; /* Adjust the border radius for roundness */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     width: 400px; /* Set a fixed width for the menu containers */
@@ -20,10 +20,14 @@
     margin-bottom: 15px; /* Add a 15px gap between boxes */
 }
 
+.popup-cancel-container {
+    font-weight:500;
+}
+
 /* Add a background color to separate the buttons */
 .menu-divider {
     background-color: #5f5f61; /* Add your desired background color */
-    height: 3px; /* Adjust the height to create the visual separation */
+    height: 2px; /* Adjust the height to create the visual separation */
 }
 
 /* Style the menu items */
@@ -43,8 +47,7 @@
     width: 100%;
     padding: 15px 0;
     font-size: 20px;
-    background-color: #3c3a3a;
-    color: #fff;
+    color: #5190ec;
     border: none;
     text-align: center;
     cursor: pointer;
@@ -52,5 +55,5 @@
 }
 
 .menuButton:hover {
-    background-color: #454343; /* Change color on hover */
+    background-color: #444544; /* Change color on hover */
 }
