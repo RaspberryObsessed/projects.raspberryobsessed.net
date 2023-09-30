@@ -1,0 +1,57 @@
+.popup-menu {
+    display: none;
+    position: absolute;
+    bottom: 30px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3c3a3a;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 90%; /* Set a fixed width for the menu */
+    font-size: 20px; /* Adjust the font size */
+}
+
+/* Separator line between sections */
+.menu-divider {
+    border-top: 1px solid #ccc; /* Add a line between sections */
+    margin: 1px 0; /* Add margin to control the gap between sections */
+}
+
+/* Style the menu items */
+.popup-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.popup-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.menuButton {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 20px;
+    background-color: #3c3a3a;
+    color: #fff;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menuButton:hover {
+    background-color: #454343; /* Change color on hover */
+}
+
+.popup-buttons, .popup-cancel {
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Adjust the margin and padding for the Cancel button */
+.popup-cancel {
+    margin-top: 10px; /* Add space between the buttons and Cancel */
+}
