@@ -19,6 +19,10 @@ function closeMenu() {
     console.log("Closed Menu");
 }
 
+function code() {
+    console.log("Enter code clicked")
+}
+
 // Add event listeners to trigger the menu
 openMenuButton.addEventListener('click', openMenu);
 cancelButton.addEventListener('click', closeMenu);

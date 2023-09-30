@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="keyboard.css">
     <link rel="stylesheet" href="popup/style.css">
     <title>Screen Time Limit</title>
 </head>
@@ -28,7 +29,7 @@
                 <div class="menu-divider"></div>
                 <li class="menuButton">Send Request</li>
                 <div class="menu-divider"></div>
-                <li class="menuButton">Enter Screen Time Passcode</li>
+                <li class="menuButton" id="enter-code">Enter Screen Time Passcode</li>
             </ul>
         </div>
         
@@ -39,9 +40,79 @@
             </ul>
         </div>
     </div>
+
+
+    <div class="enter-passcode-screen" id="passcodeScreen">
+        <h1>Enter Passcode</h1>
+        <button class="cancel-button">Cancel</button>
+        <div class="passcode-input">
+            <p>Enter Screen Time Passcode</p>
+            <div class="passcode-digits">
+                <div class="digit"></div>
+                <div class="digit"></div>
+                <div class="digit"></div>
+                <div class="digit"></div>
+            </div>
+        </div>
+        <div class="keyboard">
+            <div class="keyboard-row">
+                <div class="keyboard-key">
+                    <div class="key-value">1</div>
+                </div>
+                <div class="keyboard-key">
+                    <div class="key-value">2</div>
+                    <div class="letter-values">ABC</div>
+                </div>
+                <div class="keyboard-key">
+                    <div class="key-value">3</div>
+                    <div class="letter-values">DEF</div>
+                </div>
+            </div>
+            <div class="keyboard-row">
+                <div class="keyboard-key">
+                    <div class="key-value">4</div>
+                    <div class="letter-values">GHI</div>
+                </div>
+                <div class="keyboard-key">
+                    <div class="key-value">5</div>
+                    <div class="letter-values">JKL</div>
+                </div>
+                <div class="keyboard-key">
+                    <div class="key-value">6</div>
+                    <div class="letter-values">MNO</div>
+                </div>
+            </div>
+            <div class="keyboard-row">
+                <div class="keyboard-key">
+                    <div class="key-value">7</div>
+                    <div class="letter-values">PQRS</div>
+                </div>
+                <div class="keyboard-key">
+                    <div class="key-value">8</div>
+                    <div class="letter-values">TUV</div>
+                </div>
+                <div class="keyboard-key">
+                    <div class="key-value">9</div>
+                    <div class="letter-values">WXYZ</div>
+                </div>
+            </div>
+            <div class="keyboard-row">
+                <div class="keyboard-key key-non-used" id="blankKey"></div>
+                <div class="keyboard-key center-key-value">
+                    <div class="key-value">0</div>
+                </div>
+                <div class="keyboard-key backspace center-key-value">
+                    <div class="key-value"></div>
+                    <img src="images/back.png" alt="Backspace">
+                </div>
+            </div>
+        </div>
+             
+    </div>
     
 
-
     <script src="popup/script.js"></script>
+    <script src="enterCode.js"></script>
+    <script src="keyboard.js"></script>
 </body>
 </html>

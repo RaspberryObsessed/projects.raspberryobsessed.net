@@ -1,6 +1,6 @@
 /* Center the main menu container horizontally */
 .popup-menu {
-    display: none;
+    display: block;
     position: absolute;
     bottom: 20px; /* Adjust as needed */
     left: 50%;
@@ -27,7 +27,7 @@
 /* Add a background color to separate the buttons */
 .menu-divider {
     background-color: #5f5f61; /* Add your desired background color */
-    height: 2px; /* Adjust the height to create the visual separation */
+    height: 1.5px; /* Adjust the height to create the visual separation */
 }
 
 /* Style the menu items */
