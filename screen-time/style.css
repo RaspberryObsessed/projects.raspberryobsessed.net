@@ -46,7 +46,7 @@ h1, p {
     bottom: 30px; /* Adjust as needed */
     left: 50%;
     transform: translateX(-50%);
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     width: 100%;
