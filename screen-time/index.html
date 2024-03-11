@@ -7,8 +7,15 @@
     <link rel="stylesheet" href="keyboard.css">
     <link rel="stylesheet" href="popup/style.css">
     <title>Screen Time Limit</title>
+    <link rel="manifest" href="mainifest.json">
 </head>
 <body>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js');
+        }
+    </script>
+
     <div class="container">
         <img src="images/hour_glass.png" alt="Hourglass Image" class="hourglass">
         <p class="title">Time Limit</p>
