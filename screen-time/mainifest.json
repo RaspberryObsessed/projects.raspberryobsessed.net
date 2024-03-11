@@ -1,7 +1,7 @@
 {
     "name": "Screen Time",
     "short_name": "Screen Time",
-    "start_url": "/",
+    "start_url": "/screen-time/",
     "icons": [
         {
             "src": "icons/manifest-icon-192.maskable.png",
